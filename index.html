@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的静态网站</title>
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 拓展：可在这里引入前端框架（如Bootstrap） -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <!-- 1. 网页内容设计：头部导航 -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="网站logo">
+            <span>中秋快乐</span>
+        </div>
+        <nav class="nav">
+            <a href="#">首页</a>
+            <a href="#">关于我们</a>
+            <a href="#">服务</a>
+            <a href="#">联系</a>
+        </nav>
+    </header>
+
+    <!-- 2. 网页内容设计： banner区域 -->
+    <section class="banner">
+        <img src="images/banner.png" alt=" banner图">
+        <div class="banner-text">
+            <h1>欢迎访问</h1>
+        </div>
+    </section>
+
+    <!-- 3. 网页内容设计：内容区域 -->
+    <main class="content">
+    <!-- 模块1：月饼推荐模块（中秋主题） -->
+    <section class="card module-mooncake">
+        <div class="module-header">
+            <i class="fa-solid fa-cookie-bite" style="color: #d46b08;"></i>
+            <h2>中秋限定月饼</h2>
+        </div>
+        <div class="mooncake-grid">
+            <div class="mooncake-item">
+                <img src="images/mooncake1.jpg" alt="莲蓉蛋黄月饼" class="mooncake-img">
+                <p class="mooncake-name">莲蓉蛋黄月饼</p>
+                <p class="mooncake-desc">经典流心 · 咸香软糯</p>
+                <span class="mooncake-price">¥58/盒</span>
+            </div>
+            <div class="mooncake-item">
+                <img src="images/mooncake2.jpg" alt="豆沙月饼" class="mooncake-img">
+                <p class="mooncake-name">豆沙月饼</p>
+                <p class="mooncake-desc">清甜细腻 · 传统口味</p>
+                <span class="mooncake-price">¥45/盒</span>
+            </div>
+            <div class="mooncake-item">
+                <img src="images/mooncake3.jpg" alt="冰皮月饼" class="mooncake-img">
+                <p class="mooncake-name">冰皮月饼</p>
+                <p class="mooncake-desc">Q弹冰凉 · 水果夹心</p>
+                <span class="mooncake-price">¥68/盒</span>
+            </div>
+        </div>
+        <div class="mooncake-footer">
+            <a href="#" class="buy-btn">立即选购 <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </section>
+
+    <!-- 模块2：中秋习俗模块（文化科普） -->
+    <section class="card module-custom">
+        <div class="module-header">
+            <i class="fa-solid fa-book-open" style="color: #d46b08;"></i>
+            <h2>中秋传统习俗</h2>
+        </div>
+        <ul class="custom-list">
+            <li class="custom-item">
+                <span class="custom-icon"><i class="fa-solid fa-moon"></i></span>
+                <div>
+                    <h3>赏月</h3>
+                    <p>中秋夜全家围坐，共赏一轮明月，寄托团圆之意。</p>
+                </div>
+            </li>
+            <li class="custom-item">
+                <span class="custom-icon"><i class="fa-solid fa-utensils"></i></span>
+                <div>
+                    <h3>吃月饼</h3>
+                    <p>月饼象征“团圆”，是中秋必备的传统美食。</p>
+                </div>
+            </li>
+            <li class="custom-item">
+                <span class="custom-icon"><i class="fa-solid fa-lantern"></i></span>
+                <div>
+                    <h3>猜灯谜</h3>
+                    <p>挂起彩灯，写上谜语，增添节日趣味。</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 模块3：互动祝福模块（中秋氛围） -->
+    <section class="card module-wish">
+        <div class="module-header">
+            <i class="fa-solid fa-heart" style="color: #d46b08;"></i>
+            <h2>中秋送祝福</h2>
+        </div>
+        <div class="wish-box">
+            <textarea placeholder="写下你的中秋祝福，分享给亲友吧~" class="wish-input"></textarea>
+            <div class="wish-example">
+                <p>示例：愿月圆人团圆，中秋快乐！</p>
+            </div>
+            <button class="send-btn">
+                <i class="fa-solid fa-paper-plane"></i> 发送祝福
+            </button>
+        </div>
+        <div class="wish-quote">
+            <p>“但愿人长久，千里共婵娟”</p>
+        </div>
+    </section>
+</main>
+
+    <!-- 4. 网页内容设计：底部 -->
+    <footer class="footer">
+        <p>© 2025 喜迎中秋</p>
+    </footer>
+</body>
+</html>
